@@ -31,6 +31,7 @@ const hydrateMiddleware =  async ctx => {
 export class FlotiqApi {
     public MediaInternalAPI : Api.MediaInternalAPI;
     public ProductAPI : Api.ProductAPI;
+    public ProjectAPI : Api.ProjectAPI;
     public TagInternalAPI : Api.TagInternalAPI;
 
     constructor(key){
@@ -42,6 +43,8 @@ export class FlotiqApi {
         this.MediaInternalAPI = this.MediaInternalAPI.withPreMiddleware( hydrateMiddleware );
         this.ProductAPI = new Api.ProductAPI(configuration);
         this.ProductAPI = this.ProductAPI.withPreMiddleware( hydrateMiddleware );
+        this.ProjectAPI = new Api.ProjectAPI(configuration);
+        this.ProjectAPI = this.ProjectAPI.withPreMiddleware( hydrateMiddleware );
         this.TagInternalAPI = new Api.TagInternalAPI(configuration);
         this.TagInternalAPI = this.TagInternalAPI.withPreMiddleware( hydrateMiddleware );
     }

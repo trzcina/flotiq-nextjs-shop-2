@@ -5,6 +5,7 @@ README.md
 package.json
 src/apis/MediaInternalAPI.ts
 src/apis/ProductAPI.ts
+src/apis/ProjectAPI.ts
 src/apis/TagInternalAPI.ts
 src/apis/index.ts
 src/index.ts
@@ -39,6 +40,13 @@ src/models/ProductList.ts
 src/models/ProductVersionsList.ts
 src/models/ProductWithoutInternal.ts
 src/models/ProductWithoutRequired.ts
+src/models/Project.ts
+src/models/ProjectBatchDelete400Response.ts
+src/models/ProjectCreate400Response.ts
+src/models/ProjectList.ts
+src/models/ProjectVersionsList.ts
+src/models/ProjectWithoutInternal.ts
+src/models/ProjectWithoutRequired.ts
 src/models/SystemListProperties.ts
 src/models/Tag.ts
 src/models/TagBatchDelete400Response.ts
